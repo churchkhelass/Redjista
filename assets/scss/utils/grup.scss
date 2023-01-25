@@ -1,0 +1,18 @@
+/*два блока в горизонте*/
+.string{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+/*неколько блоков в вертикали*/
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pagination{
+	max-width: 100%;
+	height: auto;
+	display: block;
+    margin: 100px 0;
+}

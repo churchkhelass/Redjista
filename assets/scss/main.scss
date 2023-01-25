@@ -1,0 +1,81 @@
+@import 'utils/vars';
+@import 'utils/reset';
+@import 'utils/buttons';
+@import 'utils/texts';
+@import 'utils/grup';
+/*Обнуление*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {text-decoration: none;}
+ul, ol, li{list-style: none;}
+img{vertical-align: top;}
+
+nav,footer,header,aside{display: block;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+    font-family: "TT Commons";
+    font-style: normal;
+    src: url("font/TTCommons-Regular.ttf") format('truetype');;
+}
+
+html,body{
+	height: 100%;
+	line-height: 1;
+	font-family: "TT Commons";
+}
+body{
+	background: linear-gradient(100deg, #718A96, #546F7D);
+}
+.container{
+	max-width: 904px;
+	margin: 0 auto;
+}
+/*-----HEADER-------------------------------------*/
+.top {
+	background: #546F7D;
+	height: 140px;
+	width: 100%;
+}
+.top-inform{
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 50px;
+	color: #fff;
+}
+.inform{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+.home-img, .help-img{
+	margin-right: 40px;
+}
+
+.head-icon{
+	width: 60px;
+	height: 60px;
+}
+/*----FOOTER----------------------------------*/
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	max-height: 1200px;
+	
+}
